@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* This file is for your main application CSS */
+/* This file is for your main application CSS, 
+ * All the CSS should be writen inside this file
+ * Since we can not split into multiple file and include them using the @import syntax
+ */
 
 /* Alerts and form errors used by phx.new */
 .alert {
