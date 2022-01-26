@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  postgres:
+    build: postgres:14.1
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data:rw
+      # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
+    environment:
+      POSTGRES_DB: my_button_app_dev
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    command: postgres -c wal_level=logical
+
+volumes:
+  db-data:
