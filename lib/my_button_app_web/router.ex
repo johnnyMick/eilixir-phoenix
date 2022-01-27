@@ -19,6 +19,7 @@ defmodule MyButtonAppWeb.Router do
 
     get "/", PageController, :index
     live "/counter", CounterLive
+    live "/tickets", TicketsLive
   end
 
   # Other scopes may use custom stacks.
