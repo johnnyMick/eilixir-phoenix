@@ -21,6 +21,7 @@ defmodule MyButtonAppWeb.Router do
     live "/counter", CounterLive
     live "/tickets", TicketsLive
     live "/visitors", VisitorsLive
+    live "/countdown", CountdownLive
   end
 
   # Other scopes may use custom stacks.
