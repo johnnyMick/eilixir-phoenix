@@ -15,6 +15,11 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
 sudo docker-compose up -d
 ```
 
+## Ebook Reader
+```
+sudo snap install foliate
+```
+
 ## Learn more
 
   * Official website: https://www.phoenixframework.org/
