@@ -15,9 +15,10 @@ defmodule MyButtonApp.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: MyButtonApp.PubSub},
       # Start the Endpoint (http/https)
-      MyButtonAppWeb.Endpoint
+      MyButtonAppWeb.Endpoint,
       # Start a worker by calling: MyButtonApp.Worker.start_link(arg)
       # {MyButtonApp.Worker, arg}
+      MyButtonAppWeb.Presence
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
