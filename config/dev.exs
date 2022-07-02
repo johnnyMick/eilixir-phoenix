@@ -5,8 +5,8 @@ config :my_button_app, MyButtonApp.Repo,
   username: "postgres",
   password: "postgres",
   hostname: "localhost",
-  database: "my_button_app_dev",
-  port: 5434,
+  database: "app_dev",
+  port: 5435,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
